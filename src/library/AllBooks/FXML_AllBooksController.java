@@ -48,7 +48,7 @@ public class FXML_AllBooksController implements Initializable {
 
     /**
      * initialises the controller class.
-     * 
+     *
      * this function work automatically will get all book and displayed in table
      * view
      *

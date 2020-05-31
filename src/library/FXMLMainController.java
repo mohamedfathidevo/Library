@@ -29,7 +29,6 @@ public class FXMLMainController implements Initializable {
      * @param url
      * @param rb
      */
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -70,7 +69,6 @@ public class FXMLMainController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-
 
     @FXML
     public void bookSelling(ActionEvent actionEvent) throws IOException {

@@ -6,6 +6,8 @@ package library.Utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -13,26 +15,22 @@ import java.sql.SQLException;
  */
 public class DatabaseConnection {
 
-    private static final String url = "jdbc:mysql://localhost:3306/event_driven";
-    private static final String driverName = "com.mysql.jdbc.Driver";
-    private static final String username = "root";
-    private static final String password = "";
-    private static Connection con;
+    private static final String URL = "jdbc:mysql://localhost:3306/event_driven";
+    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "";
+    private static Connection connection;
 
     public static Connection getConnection() {
         try {
-            Class.forName(driverName);
-            try {
-                con = DriverManager.getConnection(url, username, password);
-            } catch (SQLException e) {
-                e.printStackTrace();
-                System.out.println("Failed to create the database connection.");
-            }
+            Class.forName(DRIVER);
+            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.println("Driver not found.");
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        return con;
+        return connection;
     }
 
 }
