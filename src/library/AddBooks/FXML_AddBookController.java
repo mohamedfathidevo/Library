@@ -91,7 +91,7 @@ public class FXML_AddBookController implements Initializable {
     }
 
     /*
-     * this fuction will take you to main menu
+     * this function will take you to main menu
      */
     public void goBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/library/FXMLMain.fxml"));
