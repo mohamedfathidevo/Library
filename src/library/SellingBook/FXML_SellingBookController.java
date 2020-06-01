@@ -65,18 +65,16 @@ public class FXML_SellingBookController implements Initializable {
                 if (resultSet.next()) {
                     int availableBook = resultSet.getInt("availableQuantity");
                     if (availableBook >= number) {
-                        if (availableBook != 0) {
-                            int newAvalibleQuantity = availableBook - number;
-                            int price = resultSet.getInt("price");
-                            databaseQueries.updateNumberAvailableBook(newAvalibleQuantity, nameBook);
-                            if (newAvalibleQuantity == 0) {
-                                databaseQueries.deleteRowByName(nameBook);
-                            }
-                            searchET.setText("");
-                            numberBookET.setText("");
-                            resultTV.setText("price =" + number * price);
-                            resultSet.close();
+                        int newAvalibleQuantity = availableBook - number;
+                        int price = resultSet.getInt("price");
+                        databaseQueries.updateNumberAvailableBook(newAvalibleQuantity, nameBook);
+                        if (newAvalibleQuantity == 0) {
+                            databaseQueries.deleteRowByName(nameBook);
                         }
+                        searchET.setText("");
+                        numberBookET.setText("");
+                        resultTV.setText("price =" + number * price);
+                        resultSet.close();
                     } else {
                         resultTV.setText("the quantity is not available");
                     }
