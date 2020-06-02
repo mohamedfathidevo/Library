@@ -3,17 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/AllBooks/BookModel.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/AddStudent/FXML_AddStudentController.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/AllBooks/FXML_AllBooksController.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/AllStudents/FXML_AllStudentsController.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/AllStudents/StudentModel.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/Utils/DatabaseConnection.java</file>
             <file>file:/home/devo/NetBeansProjects/Library/src/library/AddBooks/FXML_AddBookController.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/Library.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/SellingBook/FXML_SellingBookController.java</file>
-            <file>file:/home/devo/NetBeansProjects/Library/src/library/FXMLMainController.java</file>
             <file>file:/home/devo/NetBeansProjects/Library/src/library/Utils/DatabaseQueries.java</file>
+            <file>file:/home/devo/NetBeansProjects/Library/src/library/AllStudents/FXML_AllStudentsController.java</file>
+            <file>file:/home/devo/NetBeansProjects/Library/src/library/SellingBook/FXML_SellingBookController.java</file>
+            <file>file:/home/devo/NetBeansProjects/Library/src/library/Utils/DatabaseConnection.java</file>
         </group>
     </open-files>
 </project-private>
